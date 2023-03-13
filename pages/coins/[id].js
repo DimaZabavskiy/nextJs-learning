@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useRouter } from 'next/router'
-/*
+
 // This function gets called at build time
 export const getStaticPaths = async () => {
     // Call an external API endpoint to get coins
@@ -49,9 +49,9 @@ export const getStaticProps = async (context) => {
         }
     }
 }
-*/
 
-export const getServerSideProps = async (context) => {
+
+/*export const getServerSideProps = async (context) => {
     const { id } = context.params;
 
     // Call an external API endpoint to get coins
@@ -86,7 +86,7 @@ const getCoins = () => {
             reject('getCoins error: ' + JSON.stringify(e))
         }
     })
-}
+}*/
 
 const Coin = ({ coin, coinId }) => {
 
